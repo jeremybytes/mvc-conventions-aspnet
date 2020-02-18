@@ -8,7 +8,7 @@ Conventions include the following:
 * Parameters (Query Strings, Forms, and Routes)
 
 **Article**:  
-The Secret Code: ASP&#46;NET MVC Conventions
+The Secret Code: ASP&#46;NET MVC Conventions (*coming soon*)
 
 To see how these conventions can help you add a web site to your project relatively quickly, check out how I added a web front end to a maze generation project.
 

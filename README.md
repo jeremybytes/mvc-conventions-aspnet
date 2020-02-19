@@ -5,7 +5,6 @@ Conventions include the following:
 * File Naming and Locations
 * Basic Routing
 * Views and Layout
-* Parameters (Query Strings, Forms, and Routes)
 
 **Article**:  
 [The Secret Code: ASP&#46;NET MVC Conventions](https://jeremybytes.blogspot.com/2020/02/the-secret-code-aspnet-mvc-conventions.html)  

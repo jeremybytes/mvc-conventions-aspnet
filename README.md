@@ -6,6 +6,13 @@ Conventions include the following:
 * Basic Routing
 * Views and Layout
 
+**CodeTour**:  
+This repository contains a CodeTour to walk you through the various parts of the project code. CodeTour is an extension for Visual Studio Code that can be found here: [CodeTour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour).  
+
+To run the CodeTour, expand the "CodeTour" item in the Visual Studio Code Explorer, and click the "Start Tour" button (the green arrow).
+
+Alternately, you can read through the article mentioned below.
+
 **Article**:  
 [The Secret Code: ASP&#46;NET MVC Conventions](https://jeremybytes.blogspot.com/2020/02/the-secret-code-aspnet-mvc-conventions.html)  
 

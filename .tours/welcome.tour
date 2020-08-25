@@ -3,7 +3,11 @@
   "steps": [
     {
       "title": "Welcome",
-      "description": "## Welcome to \"ASP.NET MVC Conventions\"\r\n\r\nASP.NET MVC uses a number of features and conventions to generate a web application. These include routing, controllers, actions, and views. In this tour, we will explore these conventions by looking at the standard template (i.e. the web application created when using \"dotnet new mvc\" from the command line or File | New Project from Visual Studio). This project uses .NET Core 3.1.\r\n\r\nTo begin, run the application by using \"dotnet run\" from the project folder at the Terminal, or click the link below:\r\n\r\n>> dotnet run\r\n\r\nTo view the running web application, open a browswer to http:&nbsp;//localhost:5000, or click here:\r\n\r\n[http://localhost:5000](command:vscode.open?[\"http://localhost:5000\"])\r\n\r\n**Note: that you will be redirected to the \"https\" port automatically. This is built in to the standard template.**\r\n\r\nTo stop the running website, press \"Ctrl+C\" in the terminal. (Note: You can keep the website running through this tour.)"
+      "description": "## Welcome to \"ASP.NET MVC Conventions\"\r\n\r\nASP.NET MVC uses a number of features and conventions to generate a web application. These include routing, controllers, actions, and views. In this tour, we will explore these conventions by looking at the standard template (i.e. the web application created when using \"dotnet new mvc\" from the command line or File | New Project from Visual Studio).\r\n\r\nTo build and run this web application, you will need the .NET Core 3.1 SDK. You can download this from [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download).  \r\n"
+    },
+    {
+      "title": "Running the Application",
+      "description": "### Running the Application  \r\n\r\nTo begin, run the application by using \"dotnet run\" from the project folder at the Terminal, or click the link below:\r\n\r\n>> dotnet run\r\n\r\nTo view the running web application, open a browswer to http:&nbsp;//localhost:5000, or click here:\r\n\r\n[http://localhost:5000](command:vscode.open?[\"http://localhost:5000\"])\r\n\r\n**Note: that you will be redirected to the \"https\" port automatically. This is built in to the standard template.**\r\n\r\nTo stop the running website, press \"Ctrl+C\" in the terminal. (Note: You can keep the website running through this tour.)"
     },
     {
       "file": "Startup.cs",

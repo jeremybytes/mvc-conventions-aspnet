@@ -3,70 +3,64 @@
   "steps": [
     {
       "title": "Welcome",
-      "description": "## Welcome to \"ASP.NET MVC Conventions\"\r\n\r\nWe will explore the conventions of ASP.NET MVC by looking at the standard template.\r\n\r\nTo start, run the application by using \"dotnet run\" from the Terminal, or click the link below:\r\n\r\n>> dotnet run\r\n\r\nTo view the running web application, open a browswer to http:&nbsp;//localhost:5000, or click here:\r\n\r\n[http://localhost:5000](command:vscode.open?[\"http://localhost:5000\"])\r\n\r\n**Note: that you will be redirected to the \"https\" port automatically. This is built in to the standard template.**\r\n\r\nTo stop the running website, press \"Ctrl+C\" in the terminal."
+      "description": "## Welcome to \"ASP.NET MVC Conventions\"\r\n\r\nASP.NET MVC uses a number of features and conventions to generate a web application. These include routing, controllers, actions, and views. In this tour, we will explore these conventions by looking at the standard template (i.e. the web application created when using \"dotnet new mvc\" from the command line or File | New Project from Visual Studio). This project uses .NET Core 3.1.\r\n\r\nTo begin, run the application by using \"dotnet run\" from the project folder at the Terminal, or click the link below:\r\n\r\n>> dotnet run\r\n\r\nTo view the running web application, open a browswer to http:&nbsp;//localhost:5000, or click here:\r\n\r\n[http://localhost:5000](command:vscode.open?[\"http://localhost:5000\"])\r\n\r\n**Note: that you will be redirected to the \"https\" port automatically. This is built in to the standard template.**\r\n\r\nTo stop the running website, press \"Ctrl+C\" in the terminal. (Note: You can keep the website running through this tour.)"
     },
     {
       "file": "Startup.cs",
       "line": 51,
-      "description": "### Mapping Routes\r\n\r\nThe \"MapControllerRoute\" method sets up the routes. A Route is a way to map an incoming URL to a specific action on a controller. We can also pass parameters using a route.",
-      "title": "Mapping \"routes\""
+      "description": "### Mapping Routes\r\n\r\nIn the \"Startup\" class, the \"MapControllerRoute\" method sets up routes. A Route is a way to map an incoming URL to a specific action on a controller. We can also pass parameters using a route.",
+      "title": "Mapping Routes"
     },
     {
       "file": "Startup.cs",
       "line": 52,
-      "description": "### Naming a route\r\n\r\nRoutes can be named. In this case, we only have one (the default route).",
-      "title": "Naming a route"
+      "description": "### Naming a Route\r\n\r\nRoutes can be named. In this case, we only have one (the default route).",
+      "title": "Naming a Route"
     },
     {
       "file": "Startup.cs",
       "line": 53,
-      "description": "## Defining a route\r\n\r\nThe pattern shows how the URL is parsed. For example: http://localhost:5000/Order/Index/3 gets parsed so that it uses the \"Order\" controller, the \"Index\" action, and \"3\" as an \"id\" parameter.  \r\n\r\nIn addition, routes can have default values specified. In the pattern here, if a controller is not specified, it uses the \"Home\" controller. If the action is not specified, it uses the \"Index\" action. So the following are equivalent:  \r\n\r\nhttp://localhost:5000  \r\nhttp://localhost:5000/Home  \r\nhttp://localhost:5000/Home/Index  \r\n\r\nIn addition, the \"id\" portion of the route has a \"?\". This indicates that this value is optional.\r\n\r\nYou can define multiple routes with different patterns. Be aware that this is short-circuiting, so the first matching pattern is used.",
-      "title": "Defining a route"
+      "description": "### Defining a Route\r\n\r\nThe pattern shows how the URL is parsed. For example: http://localhost:5000/Order/Index/3 gets parsed so that it uses the \"Order\" controller, the \"Index\" action, and \"3\" as an \"id\" parameter.  \r\n\r\nIn addition, routes can have default values specified. In the pattern here, if a controller is not specified, it uses the \"Home\" controller. If the action is not specified, it uses the \"Index\" action. So the following are equivalent:  \r\n\r\nhttp://localhost:5000  \r\nhttp://localhost:5000/Home  \r\nhttp://localhost:5000/Home/Index  \r\n\r\nIn addition, the \"id\" portion of the route has a \"?\". This indicates that this value is optional.\r\n\r\nYou can define multiple routes with different patterns. Be aware that this is short-circuiting, so the first matching pattern is used.",
+      "title": "Defining a Route"
     },
     {
       "directory": "Controllers",
-      "description": "## Controllers folder\r\n\r\n**Convention: Controllers are located in the \"Controllers\" folder.**  ",
-      "title": "Controllers folder"
+      "description": "### Controllers Folder\r\n\r\n**Convention: Controllers are located in the \"Controllers\" folder.**  ",
+      "title": "Controllers Folder"
     },
     {
       "file": "Controllers/HomeController.cs",
       "line": 12,
-      "description": "### Controller naming conventions\r\n\r\n**Convention: Controllers are named with the suffix \"Controller\".**  \r\n\r\nIn the previous step, we saw that the default route uses the \"Home\" controller. This looks for a class named \"HomeController\" in the \"Controllers\" folder.",
-      "title": "Controller naming conventions"
+      "description": "### Controller Naming Convention\r\n\r\n**Convention: Controllers are named with the suffix \"Controller\".**  \r\n\r\nIn the previous step, we saw that the default route uses the \"Home\" controller. This looks for a class named \"HomeController\" in the \"Controllers\" folder.",
+      "title": "Controller Naming Convention"
     },
     {
       "file": "Controllers/HomeController.cs",
       "line": 21,
-      "description": "### Action naming conventions\r\n\r\n**Convention: An Action is a function with the same name in the Controller class.**  \r\n\r\nThe default route has an action of \"Index\" speficied, so this runs the \"Index\" function on the controller.",
-      "title": "Action naming conventions"
+      "description": "### Action Naming Convention\r\n\r\n**Convention: An Action is a function with the same name in the Controller class.**  \r\n\r\nThe default route has an action of \"Index\" speficied, so this runs the \"Index\" function on the controller.",
+      "title": "Action Naming Convention"
     },
     {
       "file": "Controllers/HomeController.cs",
       "line": 23,
-      "description": "### Calling the default View\r\n\r\nThis action returns the default \"View\" for this action (Index) on this controller (Home).  \r\n\r\nWe'll see where this comes from a bit later.",
-      "title": "Calling the default View"
-    },
-    {
-      "file": "Controllers/HomeController.cs",
-      "line": 28,
-      "description": "### Another Action\r\n\r\nThe \"Privacy\" function represents the \"Privacy\" action on the \"Home\" controller.  \r\n\r\nThis also uses the default view for this action.",
-      "title": "Another Action"
+      "description": "### Calling the Default View\r\n\r\nThis action returns the default \"View\" for this action (Index) on this controller (Home). We'll see where this comes from in the next step.  \r\n\r\nNote: We don't have to use the default view here, we can pass a parameter to the \"View()\" method to specify something other than the default (and also to pass in custom data programmatically).",
+      "title": "Calling the Default View"
     },
     {
       "directory": "Views/Home",
-      "description": "### Views folder\r\n\r\n**Convention: Views are in the \"Views\" folder with sub-folders based on the Controller name.**  \r\n\r\nThe Views/Home folder contains the views for the \"Home\" controller.",
-      "title": "Views folder"
+      "description": "### Views Folder\r\n\r\n**Convention: Views are in the \"Views\" folder with sub-folders based on the Controller name.**  \r\n\r\nThe Views/Home folder contains the views for the \"Home\" controller.",
+      "title": "Views Folder"
     },
     {
       "file": "Views/Home/Index.cshtml",
       "line": 8,
-      "description": "### View naming conventions\r\n\r\n**Convention: Views are named after the corresponding Action in the Controller.**   \r\n\r\nThe file name (Index.cshtml) indicates that this is the view for the \"Index\" action.  \r\n\r\nSo this represents the view for the \"Index\" action (the file name) on the \"Home\" controller (the folder name).  ",
-      "title": "View naming conventions"
+      "description": "### View Naming Convention\r\n\r\n**Convention: Views are named after the corresponding Action in the Controller.**   \r\n\r\nThe file name (Index.cshtml) indicates that this is the view for the \"Index\" action.  \r\n\r\nSo this represents the view for the \"Index\" action (the file name) on the \"Home\" controller (the folder name).  \r\n\r\nNote: if there were not a corresponding \"Index\" view in the \"Home\" folder, it would then look in the \"Shared\" folder to see if it can find it.",
+      "title": "View Naming Convention"
     },
     {
       "file": "Views/Home/Index.cshtml",
       "line": 8,
-      "description": "### View content\r\n\r\nThis view has minimal content. It has a <div> with a header and a link. This represents that content that is unique for this page. The rest of the page content (header, footer, and menu) come from a separate layout page that is shared across the site.",
+      "description": "### View Content\r\n\r\nThis view has minimal content. It has a <div> with a header and a link. This represents that content that is unique for this page. The rest of the page content (header, footer, and menu) come from a separate layout page that is shared across the site.",
       "selection": {
         "start": {
           "line": 5,
@@ -77,41 +71,35 @@
           "character": 7
         }
       },
-      "title": "View content"
-    },
-    {
-      "file": "Views/Home/Privacy.cshtml",
-      "line": 7,
-      "description": "### Another View\r\n\r\nBased on the name and location, the \"Privacy.chstml\" file represents the default view for the \"Privacy\" action on the \"Home\" controller.  ",
-      "title": "Another View"
+      "title": "View Content"
     },
     {
       "directory": "Views/Shared",
-      "description": "### Shared Views\r\n\r\nThe \"Views\" folder also has a \"Shared\" sub-folder. This contains views that are not particular to any controller (such as the \"Error\" view).  ",
+      "description": "### Shared Views\r\n\r\nThe \"Views\" folder also has a \"Shared\" sub-folder. This contains views that are not particular to any controller.  \r\n\r\nIf the system cannot find a view in the specific controller folder, it will check the \"Shared\" folder. This is how the \"Errors\" view works; it is in \"Shared\" since it may be called from any controller.",
       "title": "Shared Views"
     },
     {
       "file": "Views/Shared/_Layout.cshtml",
       "line": 1,
-      "description": "### Site layout\r\n\r\nThe \"_Layout.cshtml\" file (in the Shared folder) has the template that takes care of most of the layout for us, including the headers, footers, and menus.  ",
-      "title": "Site layout"
+      "description": "### Site Layout\r\n\r\nThe \"_Layout.cshtml\" file (in the Shared folder) has the template that takes care of most of the layout for us, including the headers, footers, and menus.  ",
+      "title": "Site Layout"
     },
     {
       "file": "Views/Shared/_Layout.cshtml",
       "line": 34,
-      "description": "### Injecting the body\r\n\r\nThe important part of this layout page is the \"@RenderBody()\" method. This injects the contents of the view into this part of the page. From the \"Index\" view that we saw earlier, this would put the <div> that contains the header and link.  \r\n\r\n**In .cshtml files, the \"@\" means \"there's some C# code coming!\"**  ",
-      "title": "Injecting the body"
+      "description": "### Injecting the Content\r\n\r\nThe important part of this layout page is the \"@RenderBody()\" method. This injects the contents of the view into this part of the page. From the \"Index\" view that we saw earlier, this would put the <div> that contains the header and link.  \r\n\r\n**In .cshtml files, the \"@\" means \"there's some C# code coming!\"**  ",
+      "title": "Injecting the Content"
     },
     {
       "file": "Views/Shared/_Layout.cshtml",
       "line": 6,
       "description": "### Injecting ViewData\r\n\r\nAnother way to inject values is through @ViewData. This is a set of key/values pairs that are defined in the controller or view.  \r\n\r\nIn this case, we want the \"Title\" value from the ViewData collection. For the \"Index\" action, this is declared in the view. (See next step)",
-      "title": "Injection ViewData"
+      "title": "Injecting ViewData"
     },
     {
       "file": "Views/Home/Index.cshtml",
       "line": 3,
-      "description": "### Setting ViewData\r\n\r\nThis sets the ViewData[\"Title\"] value to \"Home Page\". The \"_Layout.cshmtl\" page the uses this to set the title property of the web page.\r\n\r\nIf you re-run the web application, you will see \"Home Page\" as part of the page title (located in the browser tab).  \r\n\r\n>> dotnet run  \r\n\r\n[http://localhost:5000](command:vscode.open?[\"http://localhost:5000\"])",
+      "description": "### Setting ViewData\r\n\r\nBack in the Index view, we have a section that sets the ViewData[\"Title\"] value to \"Home Page\". The \"_Layout.cshmtl\" page the uses this to set the title property of the web page.\r\n\r\nIf you re-run the web application, you will see \"Home Page\" as part of the page title (located in the browser tab).  \r\n\r\n>> dotnet run  \r\n\r\n[http://localhost:5000](command:vscode.open?[\"http://localhost:5000\"])",
       "selection": {
         "start": {
           "line": 1,
@@ -125,7 +113,29 @@
       "title": "Setting ViewData"
     },
     {
-      "title": "Summary of conventions",
+      "file": "Controllers/HomeController.cs",
+      "line": 28,
+      "description": "### Another Action\r\n\r\nThe \"Home\" controller has another action we can use: \"Privacy\". This is represented by the \"Privacy\" function. Like the \"Index\" action, this uses the default view for the action.  \r\n\r\nLet's see the URL for this. Start by restarting the web application (if it's not already running):\r\n\r\n>> dotnet run  \r\n\r\nAnd going to the website:  \r\n\r\n[http://localhost:5000](command:vscode.open?[\"http://localhost:5000\"])\r\n\r\nThen click the \"Privacy\" link and check the URL.",
+      "title": "Another Action"
+    },
+    {
+      "file": "Startup.cs",
+      "line": 53,
+      "description": "### Another Route\r\n\r\nThe URL is \"http:&nbsp;//localhost:5000/Home/Privacy\". By reviewing our route, this means we use the \"Privacy\" action of the \"Home\" controller. (The \"id\" parameter is not used here.)"
+    },
+    {
+      "file": "Controllers/HomeController.cs",
+      "line": 28,
+      "description": "### Privacy Action\r\n\r\nRouting to the \"Privacy\" action of the \"Home\" controller runs the \"Privacy\" method on the \"HomeController\" class.  \r\n\r\nLike the \"Index\" action, this uses the default view."
+    },
+    {
+      "file": "Views/Home/Privacy.cshtml",
+      "line": 7,
+      "description": "### Privacy View\r\n\r\nBased on the name and location, the \"Privacy.chstml\" file represents the default view for the \"Privacy\" action on the \"Home\" controller.  \r\n\r\nThe content of the page is just a place holder for your own site's privacy policy. Notice that this file also sets the \"ViewData[Title]\" just like the \"Index\" view.",
+      "title": "Privacy View"
+    },
+    {
+      "title": "Summary of Conventions",
       "description": "### Summary of Conventions\r\n\r\n* The default route pattern is [Controller Name] / [Action Name] / [ID (optional parameter)].  \r\n* Controllers are located in the \"Controllers\" folder.  \r\n* Controllers are named with the suffix \"Controller\".  \r\n* An Action is a function with the same name in the Controller class.  \r\n* Views are in the \"Views\" folder with sub-folders based on the Controller name.  \r\n* Views are named after the corresponding Action in the Controller.  \r\n\r\nOther Stuff:  \r\n* In .cshtml files, the \"@\" means \"there's some C# code coming!\"  \r\n\r\nWith these conventions in hand, it is easier to understand what is happening in existing MVC web project that you need to modify. ANd it is also a good starting point to take a deeper dive into all things MVC.\r\n"
     }
   ],

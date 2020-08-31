@@ -91,7 +91,7 @@
     {
       "file": "Views/Shared/_Layout.cshtml",
       "line": 34,
-      "description": "### Injecting the Content\r\n\r\nThe important part of this layout page is the \"@RenderBody()\" method. This injects the contents of the view into this part of the page. From the \"Index\" view that we saw earlier, this would put the <div> that contains the header and link.  \r\n\r\n**In .cshtml files, the \"@\" means \"there's some C# code coming!\"**  ",
+      "description": "### Injecting the Content\r\n\r\nThe important part of this layout page is the \"@RenderBody()\" method. This injects the contents of the view into this part of the page. From the \"Index\" view that we saw earlier, this would put the &lt;div&gt; that contains the header and link.  \r\n\r\n**In .cshtml files, the \"@\" means \"there's some C# code coming!\"**  ",
       "title": "Injecting the Content"
     },
     {

@@ -13,6 +13,10 @@ To run the CodeTour, expand the "CodeTour" item in the Visual Studio Code Explor
 
 Alternately, you can read through the article mentioned below.
 
+**NEW NEW NEW**  
+**Run in Browser**  
+You can now run this in your browser directly from GitHub. On the repository page in GitHub, press "." on your keyboard. This will open Visual Studio Code in your browser. Then install the "CodeTour" extension (as noted above), and the CodeTour item will appear in the Visual Studio Code Explorer.
+
 **Article**:  
 [The Secret Code: ASP&#46;NET MVC Conventions](https://jeremybytes.blogspot.com/2020/02/the-secret-code-aspnet-mvc-conventions.html)  
 
